@@ -1,7 +1,6 @@
 
-'use strict';
-
-const btnBurger = document.querySelector('.btn-burger');
+export const catalog = () => {
+    const btnBurger = document.querySelector('.btn-burger');
 const catalog = document.querySelector('.catalog');
 const btnClose = document.querySelector('.btn-close');
 const subCatalog = document.querySelector('.subcatalog');
@@ -10,7 +9,7 @@ const btnReturn = document.querySelector('.btn-return');
 
 const overlay = document.createElement('div');
 overlay.classList.add('overlay');
-document.body.insertAdjacentElement('beforeend', overlay);
+document.body.append (overlay);
 
 
 const openMenu = () => {
@@ -51,3 +50,5 @@ document.addEventListener('keydown', (e) => {
     };
     
 });
+};
+
